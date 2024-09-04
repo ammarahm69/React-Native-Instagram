@@ -1,11 +1,11 @@
 export const posts = [
   {
-    imageURL: "https://via.placeholder.com/600x400?text=React+Hooks",
-    user: "Jennifer_official",
+    imageURL: "https://instagram.fhdd3-1.fna.fbcdn.net/v/t39.30808-6/457364409_18456259978063885_948483958041261763_n.jpg?stp=dst-jpegr_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuaGRyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=_EVlTPo5MocQ7kNvgEBl4d9&edm=AI8qBrIAAAAA&ccb=7-5&ig_cache_key=MzQ0NDY4NDM2OTkyMzU0NjQ5Ng%3D%3D.3-ccb7-5&oh=00_AYAJlQ7zAz3ylXw1sCZeuM9aJfnB14kVC-hKmwX1TXxSRA&oe=66DE67E4&_nc_sid=469e9a",
+    user: "cars_of_Pakistan",
     likes: 150,
     caption: "Train your brain with React Hooks!",
     profile_picture:
-      "https://instagram.fhdd3-1.fna.fbcdn.net/v/t51.2885-19/455696003_2181668608857023_467525625776310602_n.jpg?_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=WMAHDkj-2hQQ7kNvgEQJIHB&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYC29lQAbczsRWdQ8wPhtdDt-HVlRDcjNXt7uUATqAeG2A&oe=66DE2235&_nc_sid=8f1549",
+      "https://instagram.fhdd3-1.fna.fbcdn.net/v/t51.2885-19/428171929_758011255932557_6646844994616139227_n.jpg?_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=vtDBAvdY7HEQ7kNvgHfd4p6&_nc_gid=3a1e8295ae1941c484acfbff758b10ae&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYAU4ezNFzg2JAFFtCcTCmAKYrWl7mrGPw51fOkHnHEOZA&oe=66DE37C3&_nc_sid=8f1549",
     comments: [
       {
         user: "The qazaman",
@@ -18,7 +18,7 @@ export const posts = [
     ],
   },
   {
-    imageURL: "https://via.placeholder.com/600x400?text=JavaScript+Essentials",
+    imageURL: "https://instagram.fhdd3-1.fna.fbcdn.net/v/t39.30808-6/456728957_18429988534068559_1421391073752411929_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=4GpEWspFkwMQ7kNvgHt94n_&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzQ0MDkwNzY4NDkyNDA0NzAwNA%3D%3D.3-ccb7-5&oh=00_AYDepVEYtkg4vKlKNgDcs7jtbN8-uQ_Yn92-k14zWwTpsA&oe=66DE6A40&_nc_sid=8f1549",
     user: "Ali_KhanFitneness",
     likes: 320,
     caption: "Master the basics of JavaScript!",
@@ -36,7 +36,7 @@ export const posts = [
     ],
   },
   {
-    imageURL: "https://via.placeholder.com/600x400?text=CSS+Tricks",
+    imageURL: "https://instagram.fhdd3-1.fna.fbcdn.net/v/t51.29350-15/458093461_1466211990718843_6183773713294697970_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=qu_xpsNhADIQ7kNvgEiXx5K&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ0OTYzMTA5MjExMjg5MDc0OQ%3D%3D.3-ccb7-5&oh=00_AYBM6SQ1ahFrqt7liDDV07d4iwBWft--E_uIbEWY546TIA&oe=66DE497F&_nc_sid=8f1549",
     user: "StartUpPakistan_098",
     likes: 210,
     caption: "Enhance your UI with these CSS tricks!",
@@ -54,7 +54,7 @@ export const posts = [
     ],
   },
   {
-    imageURL: "https://via.placeholder.com/600x400?text=NodeJS+Power",
+    imageURL: "https://instagram.fhdd3-1.fna.fbcdn.net/v/t39.30808-6/457366472_445383925194303_4662741839506137663_n.jpg?stp=c0.16.1280.880a_dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMjgweDkxMy5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fhdd3-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=rr7PEcEbUMAQ7kNvgENdsbq&edm=AFg4Q8wAAAAA&ccb=7-5&ig_cache_key=MzQ0NTI0NDgzNzIwMzU5NTgyOQ%3D%3D.3-ccb7-5&oh=00_AYCfcBC8Mw38eFWkxE0mgyum3HNhsP5uoBZ3ecIU9vv5tQ&oe=66DE43F0&_nc_sid=0b30b7",
     user: "official-SWIT",
     likes: 450,
     caption: "Unleash the power of Node.js!",

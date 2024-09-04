@@ -7,6 +7,7 @@ const Post = ({ post }) => {
     <View style={{ marginBottom: 30 }}>
       <Divider width={1} orientation="vertical" />
       <PostHeader post={post} />
+      <PostImage post={post} />
     </View>
   );
 };
@@ -32,8 +33,19 @@ const PostHeader = ({ post }) => {
           }}
         />
         <Text style={{ color: "white", fontWeight: "700" }}>{post.user}</Text>
+        <Text style={{ color: "white", marginLeft: 5 }}>•</Text>
+
       </View>
     </View>
+  );
+};
+
+const PostImage = ({ post }) => {
+  return (
+    <Image
+      source={{ uri: post.imageURL }}
+      style={{ height: 300, resizeMode: 'cover' }}
+    />
   );
 };
 
