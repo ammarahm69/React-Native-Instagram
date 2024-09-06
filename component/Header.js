@@ -2,7 +2,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 import React from "react";
 
-export default function Header() {
+export default function Header({navigation}) {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
@@ -11,7 +11,7 @@ export default function Header() {
 
       <View style={styles.IconsContainer}>
         {/* Add Icons */}
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.push('PostScreen')}>
           <Image
             source={require("../assets/instagram-post-removebg-preview.png")}
             style={styles.iconsPost}

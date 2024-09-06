@@ -3,25 +3,24 @@ import React from "react";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import FormikPostUploader from "./FormikPostUploader";
 
-const AddNewPost = () => {
+const AddNewPost = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header navigation={navigation} />
       {/* Formik Post Uploader */}
       <FormikPostUploader />
     </View>
   );
 };
 
-const Header = () => {
+const Header = ({ navigation }) => {
   return (
     <View style={styles.header}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.goBack("HomeScreen")}>
         <Icon name="chevron-left" size={25} color="white" />
       </TouchableOpacity>
       <Text style={styles.headerText}>New Post</Text>
       <Text></Text>
-
     </View>
   );
 };
@@ -29,7 +28,7 @@ const Header = () => {
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 10,
-    marginTop: 10
+    marginTop: 10,
   },
   header: {
     flexDirection: "row",

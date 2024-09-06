@@ -3,10 +3,10 @@ import React from "react";
 import AddNewPost from "../newPost/AddNewPost";
 
 
-const PostScreen = () => {
+const PostScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{backgroundColor:'black' , flex:1}}>
-      <AddNewPost />
+      <AddNewPost navigation={navigation}/>
     </SafeAreaView>
   );
 };
