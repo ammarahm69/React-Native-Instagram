@@ -4,6 +4,7 @@ import Header from "../component/Header";
 import Stories from "../component/Stories";
 import Post from "../component/Post";
 import PostsData from "../data/post"; // Ensure this file path is correct
+import BottomTab from "../component/BottomTab";
 
 const HomeScreen = () => {
   return (
@@ -15,6 +16,7 @@ const HomeScreen = () => {
           <Post post={post} key={index} />
         ))}
       </ScrollView>
+      <BottomTab />
     </SafeAreaView>
   );
 };
