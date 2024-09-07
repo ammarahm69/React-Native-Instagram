@@ -3,19 +3,26 @@ import React, { useState } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { Button, Divider } from "react-native-elements";
+import validUrl from "valid-url";
 
 const PLACEHOLDER_IMG =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQpZaeWxczipxrTdSIThz5hmwrRYhEeeAl5A&s";
 const uploadPostSchema = Yup.object().shape({
   imageURL: Yup.string().url().required("A URL is required"),
-  caption: Yup.string().max(2200, "Caption has reached  the characters limit."),
+  caption: Yup.string().max(2200, "Caption has reached the character limit."),
 });
-const FormikPostUploader = () => {
+
+const FormikPostUploader = ({ navigation }) => {
   const [thumbnailURL, setThumbnailURL] = useState(PLACEHOLDER_IMG);
+
   return (
     <Formik
       initialValues={{ caption: "", imageURL: "" }}
-      onSubmit={(values) => console.log(values)}
+      onSubmit={(values) => {
+        console.log(values);
+        console.log("Your post was submitted successfully!");
+        navigation.goBack();
+      }}
       validationSchema={uploadPostSchema}
       validateOnMount={true}
     >
@@ -36,7 +43,11 @@ const FormikPostUploader = () => {
             }}
           >
             <Image
-              source={{ uri: thumbnailURL ? thumbnailURL : PLACEHOLDER_IMG }}
+              source={{
+                uri: validUrl.isUri(thumbnailURL)
+                  ? thumbnailURL
+                  : PLACEHOLDER_IMG,
+              }}
               style={{ width: 100, height: 100 }}
             />
             <View style={{ flex: 1, marginLeft: 12 }}>
@@ -49,16 +60,23 @@ const FormikPostUploader = () => {
                 onBlur={handleBlur("caption")}
                 value={values.caption}
               />
+              {errors.caption && (
+                <Text style={{ color: "red" }}>{errors.caption}</Text>
+              )}
             </View>
           </View>
+
           <Divider width={1} orientation="horizontal" />
+
           <TextInput
             placeholder="Enter Image URL"
-            onChange={(e) => setThumbnailURL(e.nativeEvent.text)}
             placeholderTextColor="gray"
             style={{ color: "white", fontSize: 18 }}
             multiline={true}
-            onChangeText={handleChange("imageURL")}
+            onChangeText={(text) => {
+              setThumbnailURL(text);
+              handleChange("imageURL")(text);
+            }}
             onBlur={handleBlur("imageURL")}
             value={values.imageURL}
           />
