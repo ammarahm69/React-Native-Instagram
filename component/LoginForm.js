@@ -58,14 +58,7 @@ const LoginForm = () => {
             </View>
 
             {/* Password Input */}
-            <View
-              style={[
-                styles.inputField,
-                {
-                  borderColor: values.password.length >= 8 ? "#ccc" : "red",
-                },
-              ]}
-            >
+            <View style={styles.inputField}>
               <TextInput
                 placeholder="Password"
                 placeholderTextColor="#444"
